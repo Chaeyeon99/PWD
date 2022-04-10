@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="그댈 위한 비밀번호 저장소"
+        android:textColor="#ffffff"
+        android:gravity="right"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PWD"
+        android:textColor="#ffffff"
+        android:gravity="right"
+        android:textSize="25dp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/folder_input"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/recycler_background"
+            android:textSize="15dp"
+            android:ems="10"
+            android:padding="5dp"
+            android:hint="추가할 웹사이트명/아이디/비밀번호"
+            android:layout_marginRight="20dp"
+            tools:layout_editor_absoluteX="76dp"
+            tools:layout_editor_absoluteY="95dp" />
+
+        <Button
+            android:id="@+id/plus_btn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="+추가하기"
+            android:textSize="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/title_name"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="354dp"
+        android:layout_height="494dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/recycler_background"
+        tools:listitem="@layout/pwd_item_list" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/go_web_btn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="웹사이트로"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_round"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="로그아웃"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:background="@drawable/button_round"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
